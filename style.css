@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+  padding: 10px;
+}
+.right-1,
+.right-2 {
+  background-color: rgba(65, 255, 107, 0.1);
+  border-radius: 5px;
+}
+.right-3 {
+  background-color: rgba(0, 166, 62, 1);
+  color: #fff;
+  border-radius: 5px;
+}
+.hero-section {
+  background-color: #006747;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
