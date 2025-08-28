@@ -28,7 +28,7 @@
     <div class="flex flex-row lg:mx-6 sm:mx-3 sm:my-3 gap-4">
       <span class="flex bg-[rgba(65,255,107,0.1)] px-6 lg:py-3 
         items-center gap-2 lg:my-7 rounded-[23px]">
-        <p class="font-bold">0</p> <img src="./assets/heart.png" alt="" class="w-5">
+        <p class="font-bold" id="count-number">0</p> <img src="./assets/heart.png" alt="" class="w-5">
       </span>
       <span class="flex bg-[rgba(65,255,107,0.1)] px-6 lg:py-3
         items-center gap-2 lg:my-7 rounded-[23px]">
@@ -58,27 +58,28 @@
       <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-4 sm:my-6 sm:mx-4 lg:my-8" id="card-items">
         <!--card: 1 -->
         <div id="card" class="bg-white shadow-lg lg:my-10 lg:mx-4 sm:my-6 p-5 rounded-[15px]">
-          <div class="icon flex justify-between">
+          <div class="flex justify-between">
             <img src="./assets/emergency.png" alt="" class="h-10 w-10 bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
-            <i class="ri-heart-line text-lg text-gray-500"></i>
+            <i class="ri-heart-line text-lg text-gray-500 icon-btn"></i>
           </div>
           <h1 class="font-bold">National Emergency Number</h1>
           <p class="text-gray-500">National Emergency</p>
           <h1 class="font-bold mt-3">999</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">All</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item" id="copy-item"><i
+                class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white" id="call-btn"><i
                 class="ri-phone-line"></i>Call</span>
           </div>
         </div>
 
         <!--card: 2 -->
         <div id="card" class="bg-white shadow-lg lg:my-10 lg:mx-4 sm:my-6 p-5 rounded-[15px]">
-          <div class="icon flex justify-between">
+          <div class="flex justify-between">
             <img src="./assets/police.png" alt="" class="h-10 w-10 bg-[rgba(223,239,255,1)] rounded-[8px] p-2">
-            <i class="ri-heart-line text-lg text-gray-500"></i>
+            <i class="ri-heart-line text-lg text-gray-500 icon-btn"></i>
           </div>
           <h1 class="font-bold">Police Helpline Number
           </h1>
@@ -86,18 +87,18 @@
           <h1 class="font-bold mt-3">999</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Police</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500" id="copy-item"><i class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white" id="call-btn"><i
                 class="ri-phone-line"></i>Call</span>
           </div>
         </div>
 
         <!--card: 3 -->
         <div id="card" class="bg-white shadow-lg lg:my-10 lg:mx-4 sm:my-6 p-5 rounded-[15px]">
-          <div class="icon flex justify-between">
+          <div class="flex justify-between">
             <img src="./assets/fire-service.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
-            <i class="ri-heart-line text-lg text-gray-500"></i>
+            <i class="ri-heart-line text-lg text-gray-500 icon-btn"></i>
           </div>
           <h1 class="font-bold">Fire Service Number
           </h1>
@@ -105,18 +106,18 @@
           <h1 class="font-bold mt-3">999</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Fire</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500" id="copy-item"><i class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white" id="call-btn"><i
                 class="ri-phone-line"></i>Call</span>
           </div>
         </div>
 
         <!--card: 4 -->
         <div id="card" class="bg-white shadow-lg lg:my-10 lg:mx-4 sm:my-6 p-5 rounded-[15px]">
-          <div class="icon flex justify-between">
+          <div class="flex justify-between">
             <img src="./assets/ambulance.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
-            <i class="ri-heart-line text-lg text-gray-500"></i>
+            <i class="ri-heart-line text-lg text-gray-500 icon-btn"></i>
           </div>
           <h1 class="font-bold"> Ambulance Service
           </h1>
@@ -124,18 +125,18 @@
           <h1 class="font-bold mt-3">1994-999999</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Health</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500" id="copy-item"><i class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white" id="call-btn"><i
                 class="ri-phone-line"></i>Call</span>
           </div>
         </div>
 
         <!--card: 5 -->
         <div id="card" class="bg-white shadow-lg lg:my-10 lg:mx-4 sm:my-6 p-5 rounded-[15px]">
-          <div class="icon flex justify-between">
+          <div class="flex justify-between">
             <img src="./assets/emergency.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
-            <i class="ri-heart-line text-lg text-gray-500"></i>
+            <i class="ri-heart-line text-lg text-gray-500 icon-btn"></i>
           </div>
           <h1 class="font-bold">Woman & Child Helpline
           </h1>
@@ -143,18 +144,18 @@
           <h1 class="font-bold mt-3">109</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Help</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500" id="copy-item"><i class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white" id="call-btn"><i
                 class="ri-phone-line"></i>Call</span>
           </div>
         </div>
 
         <!--card: 6 -->
         <div id="card" class="bg-white shadow-lg lg:my-10 lg:mx-4 sm:my-6 p-5 rounded-[15px]">
-          <div class="icon flex justify-between">
+          <div class="flex justify-between">
             <img src="./assets/emergency.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
-            <i class="ri-heart-line text-lg text-gray-500"></i>
+            <i class="ri-heart-line text-lg text-gray-500 icon-btn"></i>
           </div>
           <h1 class="font-bold">Anti-Corruption Helpline
           </h1>
@@ -162,18 +163,18 @@
           <h1 class="font-bold mt-3">106</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Govt.</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500" id="copy-item"><i class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white" id="call-btn"><i
                 class="ri-phone-line"></i>Call</span>
           </div>
         </div>
 
         <!--card: 7 -->
         <div id="card" class="bg-white shadow-lg lg:my-10 lg:mx-4 sm:my-6 p-5 rounded-[15px]">
-          <div class="icon flex justify-between">
+          <div class="flex justify-between">
             <img src="./assets/emergency.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
-            <i class="ri-heart-line text-lg text-gray-500"></i>
+            <i class="ri-heart-line text-lg text-gray-500 icon-btn"></i>
           </div>
           <h1 class="font-bold">Electricity Helpline
           </h1>
@@ -181,18 +182,18 @@
           <h1 class="font-bold mt-3">16216</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Electricity</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500" id="copy-item"><i class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white" id="call-btn"><i
                 class="ri-phone-line"></i>Call</span>
           </div>
         </div>
 
         <!--card: 8 -->
         <div id="card" class="bg-white shadow-lg lg:my-10 lg:mx-4 sm:my-6 p-5 rounded-[15px]">
-          <div class="icon flex justify-between">
+          <div class="flex justify-between">
             <img src="./assets/brac.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
-            <i class="ri-heart-line text-lg text-gray-500"></i>
+            <i class="ri-heart-line text-lg text-gray-500 icon-btn"></i>
           </div>
           <h1 class="font-bold">Brac Helpline
           </h1>
@@ -200,18 +201,18 @@
           <h1 class="font-bold mt-3">16445</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">NGO</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500" id="copy-item"><i class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white" id="call-btn"><i
                 class="ri-phone-line"></i>Call</span>
           </div>
         </div>
 
         <!--card: 9 -->
         <div id="card" class="bg-white shadow-lg lg:my-10 lg:mx-4 sm:my-6 p-5 rounded-[15px]">
-          <div class="icon flex justify-between">
+          <div class="flex justify-between">
             <img src="./assets/emergency.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
-            <i class="ri-heart-line text-lg text-gray-500"></i>
+            <i class="ri-heart-line text-lg text-gray-500 icon-btn"></i>
           </div>
           <h1 class="font-bold">Bangladesh Railway Helpline
           </h1>
@@ -219,9 +220,9 @@
           <h1 class="font-bold mt-3">163</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Travel</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500" id="copy-item"><i class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white" id="call-btn"><i
                 class="ri-phone-line"></i>Call</span>
           </div>
         </div>
@@ -234,14 +235,14 @@
           <span class="mx-4 flex gap-2"> <i class="ri-time-line text-gray-500"></i>
             <p class="font-medium">Call History </p>
           </span>
-          <span class="bg-[rgba(0,166,62,1)] text-white rounded-[10px] mx-4 px-5"> Clear</span>
+          <span class="bg-[rgba(0,166,62,1)] text-white rounded-[10px] mx-4 px-5" id="clear"> Clear</span>
         </div>
       </div>
     </div>
 
 
   </main>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
