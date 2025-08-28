@@ -22,11 +22,10 @@ for (const icon of iconNumber) {
 const callbtns = document.getElementsByClassName('call-btn');
 //console.log(callbtns);
 let coinAmount = document.getElementById('coin-number');
+
 //history container
 const historyContainer = getElement('history-container');
-const history = document.createElement('div');
-history.className =
-  ' flex justify-between items-center bg-gray-200 rounded-[10px]';
+//const history = document.createElement('div');
 
 //live time
 const now = new Date();
@@ -41,24 +40,27 @@ for (let call of callbtns) {
 
     alert('Calling' + ' ' + serviceName + ':' + serviceNumber + '...');
 
-    history.innerHTML = `
-          <div class="flex flex-col">
-           <h1 class="mx-5 text-center">${serviceName}
-          </h1>
-            <h1 class="mt-3 mx-5">${serviceNumber}</h1>
-          </div>
-          <span class="text-sm mx-2 text-center block">${localTime}</span>`;
-    historyContainer.appendChild(history);
-
     //coin reduce
     const currentCoin = Number(coinAmount.innerText);
     if (currentCoin === 0) {
       alert('Your coin is finished. Atleast 20 coins needed for a call.');
       callbtns.disabled = true;
+      return;
     } else {
       const coinReduce = Number(currentCoin) - Number(20);
       coinAmount.innerHTML = coinReduce;
     }
+    //new div created for history
+    const history = `
+    <div class="flex justify-between items-center bg-gray-200 rounded-[10px] my-2">
+          <div class="flex flex-col">
+           <h1 class="mx-5 text-center">${serviceName}
+          </h1>
+            <h1 class="mt-3 mx-5">${serviceNumber}</h1>
+          </div>
+          <span class="text-sm mx-2 text-center block">${localTime}</span>
+          </div>`;
+    historyContainer.insertAdjacentHTML('beforeend', history);
   });
 }
 
