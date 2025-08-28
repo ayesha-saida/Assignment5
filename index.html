@@ -6,19 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emergency Service Directory
   </title>
+
   <!--fav-icon -->
   <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
   <!--daisy ui & tailwind cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!--icon cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
+  <!--nav bar-->
   <header class="flex justify-between">
     <div class="flex mx-6">
-      <img src="./assets/logo.png" class=" w-12 h-12 my-7">
-      <span class="font-extrabold px-3 my-7 text-[#006747]">Emergency <br> Service </span>
+      <img src="./assets/logo.png" class=" w-12 h-12 my-8">
+      <span class="font-extrabold text-lg px-3 my-7 text-[#006747]">Emergency <br> Service </span>
     </div>
     <div class="flex flex-row mx-6 gap-4">
       <span class="flex bg-[rgba(65,255,107,0.1)] px-6 py-3 
@@ -42,8 +47,197 @@
       <h1 class="font-bold text-3xl my-2">Emergency Service Directory</h1>
       <p class="my-3">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic
         of
-        Bangladesh</pc>
+        Bangladesh</p>
     </div>
+
+    <!--cart & call history -->
+
+    <div class="flex bg-[rgba(245,255,246,1)] justify-center" id="container">
+      <!-- All carts -->
+      <div class="grid grid-cols-3  gap-4" id="cart-items">
+        <!--cart: 1 -->
+        <div class="cart bg-white shadow-lg my-10 mx-4  p-5 rounded-[15px]">
+          <div class="icon flex justify-between">
+            <img src="./assets/emergency.png" alt="" class="h-10 w-10 bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
+            <i class="ri-heart-line text-lg text-gray-500"></i>
+          </div>
+          <h1 class="font-bold">National Emergency Number</h1>
+          <p class="text-gray-500">National Emergency</p>
+          <h1 class="font-bold mt-3">999</h1>
+          <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">All</span>
+          <div class="flex m-3 gap-2" id="service">
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+              Copy</span>
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+                class="ri-phone-line"></i>Call</span>
+          </div>
+        </div>
+
+        <!--cart: 2 -->
+        <div class="cart bg-white shadow-lg my-10 mx-4 p-5 rounded-[15px]">
+          <div class="icon flex justify-between">
+            <img src="./assets/police.png" alt="" class="h-10 w-10 bg-[rgba(223,239,255,1)] rounded-[8px] p-2">
+            <i class="ri-heart-line text-lg text-gray-500"></i>
+          </div>
+          <h1 class="font-bold">Police Helpline Number
+          </h1>
+          <p class="text-gray-500">Police Helpline Number</p>
+          <h1 class="font-bold mt-3">999</h1>
+          <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Police</span>
+          <div class="flex m-3 gap-2" id="service">
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+              Copy</span>
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+                class="ri-phone-line"></i>Call</span>
+          </div>
+        </div>
+
+        <!--cart: 3 -->
+        <div class="cart bg-white shadow-lg my-10 mx-4 p-5 rounded-[15px]">
+          <div class="icon flex justify-between">
+            <img src="./assets/fire-service.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
+            <i class="ri-heart-line text-lg text-gray-500"></i>
+          </div>
+          <h1 class="font-bold">Fire Service Number
+          </h1>
+          <p class="text-gray-500">Fire Service</p>
+          <h1 class="font-bold mt-3">999</h1>
+          <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Fire</span>
+          <div class="flex m-3 gap-2" id="service">
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+              Copy</span>
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+                class="ri-phone-line"></i>Call</span>
+          </div>
+        </div>
+
+        <!--cart: 4 -->
+        <div class="cart bg-white shadow-lg my-10 mx-4 p-5 rounded-[15px]">
+          <div class="icon flex justify-between">
+            <img src="./assets/ambulance.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
+            <i class="ri-heart-line text-lg text-gray-500"></i>
+          </div>
+          <h1 class="font-bold"> Ambulance Service
+          </h1>
+          <p class="text-gray-500">Ambulance</p>
+          <h1 class="font-bold mt-3">1994-999999</h1>
+          <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Health</span>
+          <div class="flex m-3 gap-2" id="service">
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+              Copy</span>
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+                class="ri-phone-line"></i>Call</span>
+          </div>
+        </div>
+
+        <!--cart: 5 -->
+        <div class="cart bg-white shadow-lg my-10 mx-4 p-5 rounded-[15px]">
+          <div class="icon flex justify-between">
+            <img src="./assets/emergency.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
+            <i class="ri-heart-line text-lg text-gray-500"></i>
+          </div>
+          <h1 class="font-bold">Woman & Child Helpline
+          </h1>
+          <p class="text-gray-500">Woman & Child</p>
+          <h1 class="font-bold mt-3">109</h1>
+          <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Help</span>
+          <div class="flex m-3 gap-2" id="service">
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+              Copy</span>
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+                class="ri-phone-line"></i>Call</span>
+          </div>
+        </div>
+
+        <!--cart: 6 -->
+        <div class="cart bg-white shadow-lg my-10 mx-4 p-5 rounded-[15px]">
+          <div class="icon flex justify-between">
+            <img src="./assets/emergency.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
+            <i class="ri-heart-line text-lg text-gray-500"></i>
+          </div>
+          <h1 class="font-bold">Anti-Corruption Helpline
+          </h1>
+          <p class="text-gray-500">Anti-Corruption </p>
+          <h1 class="font-bold mt-3">106</h1>
+          <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Govt.</span>
+          <div class="flex m-3 gap-2" id="service">
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+              Copy</span>
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+                class="ri-phone-line"></i>Call</span>
+          </div>
+        </div>
+
+        <!--cart: 7 -->
+        <div class="cart bg-white shadow-lg my-10 mx-4 p-5 rounded-[15px]">
+          <div class="icon flex justify-between">
+            <img src="./assets/emergency.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
+            <i class="ri-heart-line text-lg text-gray-500"></i>
+          </div>
+          <h1 class="font-bold">Electricity Helpline
+          </h1>
+          <p class="text-gray-500">Electricity Outage</p>
+          <h1 class="font-bold mt-3">16216</h1>
+          <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Electricity</span>
+          <div class="flex m-3 gap-2" id="service">
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+              Copy</span>
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+                class="ri-phone-line"></i>Call</span>
+          </div>
+        </div>
+
+        <!--cart: 8 -->
+        <div class="cart bg-white shadow-lg my-10 mx-4 p-5 rounded-[15px]">
+          <div class="icon flex justify-between">
+            <img src="./assets/brac.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
+            <i class="ri-heart-line text-lg text-gray-500"></i>
+          </div>
+          <h1 class="font-bold">Brac Helpline
+          </h1>
+          <p class="text-gray-500">Brac</p>
+          <h1 class="font-bold mt-3">16445</h1>
+          <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">NGO</span>
+          <div class="flex m-3 gap-2" id="service">
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+              Copy</span>
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+                class="ri-phone-line"></i>Call</span>
+          </div>
+        </div>
+
+        <!--cart: 9 -->
+        <div class="cart bg-white shadow-lg my-10 mx-4 p-5 rounded-[15px]">
+          <div class="icon flex justify-between">
+            <img src="./assets/emergency.png" alt="" class="h-10 w-10  bg-[rgba(255,227,226,1)] rounded-[8px] p-2">
+            <i class="ri-heart-line text-lg text-gray-500"></i>
+          </div>
+          <h1 class="font-bold">Bangladesh Railway Helpline
+          </h1>
+          <p class="text-gray-500">Bangladesh Railway</p>
+          <h1 class="font-bold mt-3">163</h1>
+          <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Travel</span>
+          <div class="flex m-3 gap-2" id="service">
+            <span class="border py-2 px-5 rounded-[8px] text-gray-500"><i class="ri-file-copy-line"></i>
+              Copy</span>
+            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white"><i
+                class="ri-phone-line"></i>Call</span>
+          </div>
+        </div>
+
+      </div>
+      <!-- call history -->
+      <div class="bg-white shadow-lg mx-10 my-10 rounded-[15px]" id="history-section">
+        <div class="flex justify-between my-5 mx-4" id="history-icon">
+          <span class="mx-4 flex gap-2"> <i class="ri-time-line text-gray-500"></i>
+            <p class="font-medium">Call History </p>
+          </span>
+          <span class="bg-[rgba(0,166,62,1)] text-white rounded-[10px] mx-4 px-5"> Clear</span>
+        </div>
+      </div>
+    </div>
+
+
   </main>
 </body>
 
