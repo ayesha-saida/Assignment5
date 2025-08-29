@@ -69,3 +69,33 @@ getElement('clear-btn').addEventListener('click', function () {
   const history_Container = getElement('history-container');
   history_Container.innerHTML = '';
 });
+
+//copy count increment
+let copyCount = document.querySelectorAll('.copy-item');
+
+for (const copy of copyCount) {
+  copy.addEventListener('click', function () {
+    //print copied number
+    const serviceNumber = copy.parentNode.parentNode.childNodes[7].innerText;
+    alert('Help line number: ' + serviceNumber);
+
+    //increase number of the time any number copied
+    const currentCopy = document.getElementById('copy-count').innerText;
+    const addCopy = Number(currentCopy) + Number(1);
+    document.getElementById('copy-count').innerText = addCopy;
+  });
+}
+
+//copy to clipboard
+function copyText() {
+  for (const copy of copyCount) {
+    copy.addEventListener('click', function () {
+      //print copied number
+      const serviceNumber = copy.parentNode.parentNode.childNodes[7].innerText;
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(serviceNumber);
+      }
+    });
+  }
+}

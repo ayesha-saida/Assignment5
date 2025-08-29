@@ -36,7 +36,11 @@
       </span>
       <span class="flex bg-[rgba(0,166,62,1)] px-6 
         items-center gap-2 lg:my-7 rounded-[23px]">
-        <p class="text-white"> 2 Copy</p>
+        <span class="flex gap-2">
+          <p class="text-white" id="copy-count"> 2
+          </p>
+          <p class="text-white">Copy</p>
+        </span>
       </span>
     </div>
   </header>
@@ -45,7 +49,7 @@
     <div class="flex flex-col items-center bg-[#006747] text-white">
       <img src="./assets/logo-dark.png" class="lg:h-20 lg:w-20 lg:my-4 sm:w-10 sm:h-10 sm:my-2">
       <h1 class="font-bold lg:text-3xl lg:my-2 sm:text-xl">Emergency Service Directory</h1>
-      <p class="my-3 sm:break-words">Government Emergency Services at Your Fingertip – A Project by Government of the
+      <p class="my-5 sm:break-words">Government Emergency Services at Your Fingertip – A Project by Government of the
         People’s Republic
         of
         Bangladesh</p>
@@ -67,10 +71,11 @@
           <h1 class="font-bold mt-3">999</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">All</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i class="ri-file-copy-line"></i>
-              Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
-                class="ri-phone-line"></i>Call</span>
+            <button onclick="copyText()" class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i
+                class="ri-file-copy-line"></i>
+              Copy</button>
+            <button class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
+                class="ri-phone-line"></i>Call</button>
           </div>
         </div>
 
@@ -86,10 +91,11 @@
           <h1 class="font-bold mt-3">999</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Police</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i class="ri-file-copy-line"></i>
-              Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
-                class="ri-phone-line"></i>Call</span>
+            <button onclick="copyText()" class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i
+                class="ri-file-copy-line"></i>
+              Copy</button>
+            <button class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
+                class="ri-phone-line"></i>Call</button>
           </div>
         </div>
 
@@ -105,10 +111,11 @@
           <h1 class="font-bold mt-3">999</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Fire</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i class="ri-file-copy-line"></i>
-              Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
-                class="ri-phone-line"></i>Call</span>
+            <button onclick="copyText()" class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i
+                class="ri-file-copy-line"></i>
+              Copy</button>
+            <button class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
+                class="ri-phone-line"></i>Call</button>
           </div>
         </div>
 
@@ -124,10 +131,11 @@
           <h1 class="font-bold mt-3">1994-999999</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Health</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i class="ri-file-copy-line"></i>
-              Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
-                class="ri-phone-line"></i>Call</span>
+            <button onclick="copyText()" class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i
+                class="ri-file-copy-line"></i>
+              Copy</button>
+            <button class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
+                class="ri-phone-line"></i>Call</button>
           </div>
         </div>
 
@@ -143,10 +151,11 @@
           <h1 class="font-bold mt-3">109</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Help</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i class="ri-file-copy-line"></i>
+            <button onclick="copyText()" class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i
+                class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
-                class="ri-phone-line"></i>Call</span>
+              <button class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
+                  class="ri-phone-line"></i>Call</button>
           </div>
         </div>
 
@@ -162,10 +171,11 @@
           <h1 class="font-bold mt-3">106</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Govt.</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i class="ri-file-copy-line"></i>
+            <button onclick="copyText()" class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i
+                class="ri-file-copy-line"></i>
               Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
-                class="ri-phone-line"></i>Call</span>
+              <button class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
+                  class="ri-phone-line"></i>Call</button>
           </div>
         </div>
 
@@ -181,10 +191,11 @@
           <h1 class="font-bold mt-3">16216</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Electricity</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i class="ri-file-copy-line"></i>
-              Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
-                class="ri-phone-line"></i>Call</span>
+            <button onclick="copyText()" class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i
+                class="ri-file-copy-line"></i>
+              Copy</button>
+            <button class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
+                class="ri-phone-line"></i>Call</button>
           </div>
         </div>
 
@@ -200,10 +211,11 @@
           <h1 class="font-bold mt-3">16445</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">NGO</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i class="ri-file-copy-line"></i>
-              Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
-                class="ri-phone-line"></i>Call</span>
+            <button onclick="copyText()" class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i
+                class="ri-file-copy-line"></i>
+              Copy</button>
+            <button class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
+                class="ri-phone-line"></i>Call</button>
           </div>
         </div>
 
@@ -219,10 +231,11 @@
           <h1 class="font-bold mt-3">163</h1>
           <span class="bg-gray-300  px-2 py-1 rounded-[10px]" id="category">Travel</span>
           <div class="flex m-3 gap-2" id="service">
-            <span class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i class="ri-file-copy-line"></i>
-              Copy</span>
-            <span class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
-                class="ri-phone-line"></i>Call</span>
+            <button onclick="copyText()" class="border py-2 px-5 rounded-[8px] text-gray-500 copy-item"><i
+                class="ri-file-copy-line"></i>
+              Copy </button>
+            <button class="border py-2 px-5 rounded-[8px] bg-[rgba(0,166,62,1)] text-white call-btn"><i
+                class="ri-phone-line"></i>Call</button>
           </div>
         </div>
 
